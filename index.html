@@ -6,22 +6,77 @@
     <style>
         body
         {
-            background-image:url('../background.png');
+            background-image:url('./background.png');
             background-repeat:no-repeat;
             background-position:top;
         }
     </style>
 </head>
 <body>
-<style>
-    body
+<style type="text/css">
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        font-family: "华文行楷";
 
-    a:link {color:#000000;}
-    a:link {text-decoration:none;}
-    a:link {background-color:#FFFF;}
+    }
+    .dropbtn:link {
+    }
+    .dropbtn:visited {}
+    .dropbtn:hover{
+        color: #000000;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        font-family: "华文行楷";
+text-decoration:underline; /* mouse over link */
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    }
+
+    .dropdown-content a {
+        color: #000000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+
+    }
 </style>
-<img src="./name.png">
-<center><h2>欢迎来到Rain谷的小窝</h2><br><img src="../rain.png"><br> <h>开发人员：Rain谷</h></center>
+<div class="dropdown">
+
+    <button class="dropbtn">Rain谷的小窝</button>
+    <div class="dropdown-content">
+        <a href="#">链接 1</a>
+        <a href="#">链接 2</a>
+        <a href="#">链接 3</a>
+    </div>
+</div>
+
+<center><h2>欢迎来到Rain谷的小窝</h2><br><img src="./rain.png"><br> <h>开发人员：Rain谷</h></center>
 <div style="border-radius: 0px ">
    <!-- <a  href="javascript:void(0)" title="点此打开主菜单" style="white-space: nowrap; position: page">开始</a>-->
 </div>
