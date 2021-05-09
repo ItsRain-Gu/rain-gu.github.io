@@ -2,94 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>手机</title>
+    <title>鱼骨小窝</title>
+    <script type="text/javascript">
+        try {
+            var urlhash = window.location.hash;
+            if (!urlhash.match("fromapp")) {
+                if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+                    window.location = "./mobile/index.html";
+                }
+            }
+        }
+        catch (err) {
+        }
+
+    </script>
+    <link rel="stylesheet" id="rain-css" href="../css/rain.min.css" type="text/css">
+
     <style>
         body
         {
             background-image:url('../background.png');
             background-repeat:no-repeat;
             background-attachment:fixed;
-            background-size: 800px 600px
+            background-size: 100% 100%;
         }
     </style>
 </head>
 <body>
 <div>
-<style type="text/css">
-    html{
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    ul{
-        width: 1920px;
-        height: 40px;
-        position: relative;
-        top:-20px;
-        right:10px;
-        background-color: rgba(52, 52, 52, 0.70);
-        background-repeat:repeat-x;
-        background-attachment:fixed;
-        padding: 0px;
-        margin: 0px;
-        background-size: 100% 100%;
-    }
+    <style>
+        .dropbtn {
+            background-color: rgba(0,0,0,1);
+            color: rgba(0,0,0,1);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-    .dropbtn{
-        background-color: rgba(52, 52, 52, 0);
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        text-decoration:none;
-        overflow:scroll;
-        position: relative;
-        top: 13px;
-        right: -1360px;
-    }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0,0,0,1);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+        }
 
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        background-size: 100% 100%;
-    }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        color: white;
-        background-color: rgba(52, 52, 52, 0.70);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(52, 52, 52, 0.70);
-        position: relative;
-        top: 24px;
-        border: none;
-    }
-    .dropdown-content a {
-        color: #ffffff;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+        .dropdown-content a:hover {background-color: rgba(0,0,0,1)}
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-</style>
-<ul>
-    <div class="dropdown">
-        <a class="dropbtn" href="#">首页</a>
-        <div class="dropdown-content">
-            <a href="#">链接 1</a>
-            <a href="#">链接 2</a>
-            <a href="#">链接 3</a>
+        .dropdown:hover .dropbtn {
+            background-color: #rgba(0,0,0,1);
+        }
+    </style>
+    <div id="kratos-wrapper">
+        <div id="kratos-page" style="height: auto !important;">
+            <div id="kratos-header">
+                <div class="nav-toggle"><a class="kratos-nav-toggle js-kratos-nav-toggle"><i></i></a></div>
+                <header id="kratos-header-section">
+                    <div class="container">
+                        <div class="nav-header">
+                            <nav id="kratos-menu-wrap" class="menu-%e9%a6%96%e9%a1%b5-container">
+                                <ul id="kratos-primary-menu" class="sf-menu">
+                                    <li><a href="https://rain-gu.github.io">首页</a>
+                                        <ul class="sub-menu">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </div>
         </div>
     </div>
-</ul>
 </div>
-
+<div class="dropdown">
+    <button class="dropbtn">下拉菜单</button>
+    <div class="dropdown-content">
+        <a href="//www.runoob.com">菜鸟教程 1</a>
+        <a href="//www.runoob.com">菜鸟教程 2</a>
+        <a href="//www.runoob.com">菜鸟教程 3</a>
+    </div>
+</div>
 </body>
 </html>
