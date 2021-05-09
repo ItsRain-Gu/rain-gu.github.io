@@ -6,38 +6,50 @@
     <style>
         body
         {
-            background-image:url('/background.png');
+            background-image:url('./background.png');
             background-repeat:no-repeat;
-            background-position:top;
+            background-position:top;    max-width: 100%;
+            height: auto;
+            position: relative;
+            top:0px
         }
     </style>
 </head>
 <body>
 <style type="text/css">
-    .img:link {}
-    .img:visited {}
-    .img:hover{
-        background-color: #343434;
-        height: 40px;
+    ul{
+        width:1920px;
+        height: 50px;
+position: relative;
+top:-20px;
+        right:10px;
+        background-color: rgba(52, 52, 52, 0.70);
+    }
+
+
+    .dropbtn{
+        background-color: rgba(52, 52, 52, 0);
         color: white;
+        padding: 16px;
         font-size: 16px;
-        position: relative;
-        top:-45px
+        border: none;
+        cursor: pointer;
+        font-size: large;
     }
 
     .dropdown {
         position: relative;
         display: inline-block;
+
     }
 
     .dropdown-content {
         display: none;
-        position: relative;
-        background-color: rgba(52, 52, 52, 0.85);
+        position: absolute;
+        background-color: #f9f9f9;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
-
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -45,39 +57,24 @@
         display: block;
     }
 
-    .dropdown-content a:hover {background-color: #f1f1f1}
-
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
-
-    .banner{
-      top: 0px;
-    }
-    .menu {
-        background-color:transparent ;
-        height: 40px;
-        color: white;
-        font-size: 16px;
-        position: relative;
-        top:-43px;
-        left: 250px;
-        border-style:none;
-     }
 </style>
-<img src="./banner.png" class="banner" >
-<div class="dropdown">
-    <button class="menu" >Rain谷</button>
+<ul>
+    <div class="dropdown">
+     <a class="dropbtn" href="#">下拉菜单</a>
     <div class="dropdown-content">
         <a href="#">链接 1</a>
         <a href="#">链接 2</a>
         <a href="#">链接 3</a>
     </div>
+</ul>
 </div>
-
-<center><h2>欢迎来到Rain谷的小窝</h2><br><img src="./rain.png"><br> <h>开发人员：Rain谷</h></center>
-<div style="border-radius: 0px ">
+<marquee direction="up" behavior="scroll" scrollamount="1080" scrolldelay="10000" loop="-1" width="1920" height="1080"  background-color:transparent ; hspace="0" vspace="0">
+</marquee>
+<!--<center><h2>欢迎来到Rain谷的小窝</h2><br><img src="./rain.png"><br> <h>开发人员：Rain谷</h></center>-->
    <!-- <a  href="javascript:void(0)" title="点此打开主菜单" style="white-space: nowrap; position: page">开始</a>-->
 </div>
 </body>
