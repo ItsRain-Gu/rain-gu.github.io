@@ -45,7 +45,7 @@ a:active {text-decoration:none;}  /* selected link */
     border-radius: 5px;
     position: absolute;
     left: 135px;
-    top: -1200px;
+    top: -200px;
     z-index: -3;
 }
 #list2{
