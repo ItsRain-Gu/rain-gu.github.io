@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>鱼骨小窝</title>
+    <script type="text/javascript">
+        try {
+            var urlhash = window.location.hash;
+            if (!urlhash.match("fromapp")) {
+                if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)) {
+                    window.location = "./mobile/index.html";
+                }
+            }
+        }
+        catch (err) {
+        }
+
+    </script>
+
+
     <style>
         body
         {
@@ -78,12 +93,6 @@
         display: block;
     }
 
-    @media screen and(max-width: 1080px) {
-        body{
-            flex: 100%;
-            max-width: 80%;
-        }
-    }
 </style>
 <ul>
     <div class="dropdown">
@@ -96,6 +105,7 @@
     </div>
 </ul>
 </div>
+
 
 </body>
 </html>
