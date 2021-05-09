@@ -21,6 +21,7 @@
         overflow-x: hidden;
     }
     ul{
+        width: 1920px;
         height: 40px;
         position: relative;
         top:-20px;
@@ -30,6 +31,7 @@
         background-attachment:fixed;
         padding: 0px;
         margin: 0px;
+        background-size: 100% 100%;
     }
 
 
@@ -51,7 +53,7 @@
     .dropdown {
         position: relative;
         display: inline-block;
-
+        background-size: 100% 100%;
     }
 
     .dropdown-content {
@@ -76,6 +78,12 @@
         display: block;
     }
 
+    @media screen and(max-width: 1080px) {
+        body{
+            flex: 100%;
+            max-width: 80%;
+        }
+    }
 </style>
 <ul>
     <div class="dropdown">
