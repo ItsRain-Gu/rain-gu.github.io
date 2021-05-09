@@ -27,15 +27,17 @@ nav{
     text-transform: uppercase;
     font-family: FontAwesome;
     position: relative;
-    top:5px;
+top:1PX;
 }
 a:link {text-decoration:none;}    /* unvisited link */
 a:visited {text-decoration:none;} /* visited link */
 a:hover {text-decoration:none;
 background-color: rgba(54, 55, 55, 0.7);
-    height: 50px;
+    height: 60px;
 }   /* mouse over link */
-a:active {text-decoration:none;}  /* selected link */
+a:active {text-decoration:none;
+    background-color: rgba(54, 55, 55, 0.7);
+    height: 60px;}  /* selected link */
 #list1,#list2{
     background: white;
     text-align: center;
